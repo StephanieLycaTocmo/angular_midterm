@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="body">
+    <h1>Rating KDrama</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="../assets/img1.jpg" class="img1" alt="...">
+            <h3>Goblin</h3>
+            <p class="ep">16 Episodes</p>
+        </div>
+
+        <div class="col-md-9">
+          <p>Kim Shin (Gong Yoo), a decorated military general from the Goryeo Dynasty, is framed as a traitor and killed by the young king. Years after his death, he is cursed by the Almighty to stay immortal forever, enduring the pain of seeing his loved ones die as punishment for the soldiers he killed to protect his country. 
+            He becomes an immortal goblin, helping people with his powers and being a kind man in spite of his grieving past. The only way to put an end to his immortality is the Goblin's bride, whose aid in pulling out the sword will end his painful immortality.
+          </p>
+
+          <p>Ji Eun-tak (Kim Go-eun) is a bubbly high school student who remains cheerful and hopeful despite her tragic life. She summons the Goblin by chance and their fates begin to entwine. 
+            The Goblin's nephew, Yoo Deok-hwa (Yook Sung-jae), leases the Goblin's house to a Grim Reaper (Lee Dong-wook) and the two end up living under the same roof. Ji Eun-tak starts working a part-time job at a chicken store run by a charismatic young woman, Sunny (Yoo In-na).
+            As the lives of Kim Shin, Grim Reaper, Ji Eun-tak and Sunny interweave, a deeper story unfolds, as they are not just strangers who met by chance, but people with deep-rooted relations.
+          </p><hr>
+
+          <ngb-rating [max]="5" [(rate)]="current_rate" class="rate">
+            <ng-template let-fill="fill" let-index="index">
+              <span class="star" [class.filled]="fill === 100">★</span>
+            </ng-template>
+          </ngb-rating>
+          <pre class="rateNum">Rate: <b>{{current_rate}} of 5</b></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
